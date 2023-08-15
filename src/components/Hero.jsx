@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] md:text-[55px] lg:text-[65px]  text-[26px] text-white ss:leading-[100.8px]  text-center ss:text-start sm:leading-[80px]">
+        <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] md:text-[55px] lg:text-[65px]  text-[26px] text-white ss:leading-[100.8px]   ss:text-start sm:leading-[80px]">
             Sell your <br className="hidden ss:block"/>  property in
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
 
         <h1
-          className="font-poppins text-center ss:text-start font-semibold  ss:text-[60px] text-[28px] text-white lg:text-[65px]  md:text-[55px]
+          className="font-poppins  ss:text-start font-semibold  ss:text-[60px] text-[28px] text-white lg:text-[65px]  md:text-[55px]
         ss:leading-[80.8px] w-full"
         >
           <span className="text-gradient ss:text-[80px] sm:text-[80px] text-[45px]">
@@ -39,7 +39,7 @@ const Hero = () => {
           <br />  with confidence!
         </h1>
         <p
-          className={`${styles.paragraph} text-center sm:text-justify max-w-[470px] mt-5`}
+          className={`${styles.paragraph}  sm:text-justify max-w-[470px] mt-5`}
         >
           Our trusted team of expert real estate agents provide personalized
           marketing strategies & transparent communication to maximize the value
