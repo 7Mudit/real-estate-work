@@ -1,39 +1,61 @@
 import styles from "../style";
 import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
+import banner_image from './banner_image.png'
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex md:flex-row  flex-col ${styles.paddingY}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+    <section
+      id="home"
+      className={`flex md:flex-row  flex-col ${styles.paddingY}`}
+    >
+      <div
+        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+      >
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 ">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">20%</span> Discount For{" "}
-            <span className="text-white">1 Month</span> Account
+            <span className="text-white">101</span> Tips to present your {" "}
+            <span className="text-white">home</span> for Sale
           </p>
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px]  text-[22px] text-white ss:leading-[100.8px] sm:leading-[75px]">
-            Sell Your Property in
+        <h1 className="flex-1 font-poppins font-semibold ss:text-[60px]  lg:text-[65px]  text-[26px] text-white ss:leading-[100.8px]  text-center ss:text-start sm:leading-[80px]">
+            Sell Your  Property in
           </h1>
+
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[22px] text-white 
-        ss:leading-[100.8px] w-full">
-           <span className="text-gradient ss:text-[80px] text-[35px]">Canberra</span> <br /> with confidence !!.
+        <h1
+          className="font-poppins text-center ss:text-start font-semibold  ss:text-[60px] text-[28px] text-white lg:text-[65px]
+        ss:leading-[80.8px] w-full"
+        >
+          <span className="text-gradient ss:text-[80px] sm:text-[80px] text-[45px]">
+            Canberra
+          </span>{" "}
+          <br />  with confidence !!.
         </h1>
-        <p className={`${styles.paragraph} text-justify max-w-[470px] mt-5`}>
-        Our trusted team of expert real estate agents provide personalized marketing strategies and transparent communication to maximize the value of your property.
+        <p
+          className={`${styles.paragraph} text-center sm:text-justify max-w-[470px] mt-5`}
+        >
+          Our trusted team of expert real estate agents provide personalized
+          marketing strategies & transparent communication to maximize the value
+          of your property.
         </p>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+      <div
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+      >
+        <img
+          src={robot}
+          alt="billing"
+          className="w-[100%] h-[100%] relative z-[5]"
+        />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
