@@ -1,7 +1,7 @@
 import styles from "../style";
 import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
-import banner_image from './banner_image.png'
+import banner_image from './banner.png'
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
         <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] md:text-[55px] lg:text-[65px]  text-[26px] text-white ss:leading-[100.8px]  text-center ss:text-start sm:leading-[80px]">
-            Sell Your <br className="hidden ss:block"/>  Property in
+            Sell your <br className="hidden ss:block"/>  property in
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
@@ -36,7 +36,7 @@ const Hero = () => {
           <span className="text-gradient ss:text-[80px] sm:text-[80px] text-[45px]">
             Canberra
           </span>{" "}
-          <br />  with confidence !!.
+          <br />  with confidence!
         </h1>
         <p
           className={`${styles.paragraph} text-center sm:text-justify max-w-[470px] mt-5`}
@@ -51,7 +51,7 @@ const Hero = () => {
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
         <img
-          src={robot}
+          src={banner_image}
           alt="billing"
           className="w-[100%] h-[100%] relative z-[5]"
         />

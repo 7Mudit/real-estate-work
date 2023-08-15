@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
 const Stats = () => (
-  <section className={`flex justify-center items-start sm:items-center flex-col lg:flex-row sm:mb-20 mb-6`}>
+  <section className={`flex justify-center items-start  sm:items-baseline flex-col lg:flex-row sm:mb-20 mb-6`}>
     {stats.map((stat) => (
       <div
         key={stat.id}
