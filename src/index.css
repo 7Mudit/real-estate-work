@@ -9,6 +9,9 @@
     user-select: none;
     scroll-behavior: smooth;
 }
+a, button, [role="button"], input[type="submit"], input[type="button"] {
+  -webkit-tap-highlight-color: none; 
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 
@@ -142,4 +145,18 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+.form-style {
+  @apply rounded-lg p-3 text-[16px] leading-[24px] text-richblack-900 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-500  focus:outline-none;
+}
+.form-style2{
+  @apply rounded-lg p-3  text-[16px] leading-[24px] text-richblack-900 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-500 border-richblack-700 border-[1px]  focus:outline-none;
+}
+
+.lable-style {
+  @apply text-[16px] text-[#140342];
+}
+.yellowButton {
+  @apply cursor-pointer rounded-md bg-yellow-50 px-[20px] py-[8px] font-semibold text-richblack-900;
 }
