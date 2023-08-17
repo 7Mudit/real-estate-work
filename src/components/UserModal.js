@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { RxCross2 } from "react-icons/rx";
 import PhoneInput from "react-phone-input-2";
@@ -18,18 +18,17 @@ const UserModal = ({ setUserModal }) => {
 
   const handlePhoneChange = (value, data) => {
     setPhone(value);
-    setValue("phoneNumber", value);  // sets value for react-hook-form
-    if(!/^(\+)?[0-9]{10,15}$/.test(value)){
+    setValue("phoneNumber", value); // sets value for react-hook-form
+    if (!/^(\+)?[0-9]{10,15}$/.test(value)) {
       setError("phoneNumber", {
         type: "manual",
-        message: "Please enter a valid phone number."
+        message: "Please enter a valid phone number.",
       });
-    }
-    else{
+    } else {
       setError("phoneNumber", {
         type: "manual",
-        message: ""
-    });
+        message: "",
+      });
     }
   };
   useEffect(() => {
@@ -98,7 +97,7 @@ const UserModal = ({ setUserModal }) => {
                   inputProps={{
                     name: "phoneNumber",
                     required: true,
-                    placeholder:"Enter your phone number",
+                    placeholder: "Enter your phone number",
                     className: "form-style2  w-full !pl-10",
                   }}
                 />
@@ -138,6 +137,82 @@ const UserModal = ({ setUserModal }) => {
             <h2 className="text-center text-2xl my-5 font-poppins text-darkblue ">
               Property Details
             </h2>
+            <div className="flex w-11/12 py-3 flex-wrap  flex-col gap-[30px] justify-center items-start">
+              <div className="w-full flex flex-col gap-[10px] ">
+                <label className="text-darkblue text-sm font-walsheimMed font-[600]">
+                  Number of Bedrooms <sup className="text-pink-200">*</sup>
+                </label>
+                <div className="grid  sm:grid-cols-5 grid-cols-3 gap-2">
+                {["1", "2", "3", "4", "5+"].map((value) => (
+                  <div key={value} className="flex  gap-2">
+                    <input
+                      type="radio"
+                      id={`bedroom-${value}`}
+                      value={value}
+                      className="custom-radio"
+                      {...register("bedrooms", { required: true })}
+                    />
+                    <label className="custom-radio-label" htmlFor={`bedroom-${value}`}>{value}</label>
+                  </div>
+                ))}
+                </div>
+                {errors.bedrooms && (
+                  <span className="ml-2 text-sx tracking-wide text-pink-200">
+                    Please select the number of bedrooms
+                  </span>
+                )}
+              </div>
+
+              <div className="w-full flex flex-col gap-[10px] ">
+                <label className="text-darkblue text-sm font-walsheimMed font-[600]">
+                  Number of Bathrooms <sup className="text-pink-200">*</sup>
+                </label>
+                <div className="grid  sm:grid-cols-5 grid-cols-3 gap-2">
+                {["1", "2", "3", "4", "5+"].map((value) => (
+                  <div key={value} className="flex gap-2 flex-wrap">
+                    <input
+                      type="radio"
+                      id={`bathroom-${value}`}
+                      value={value}
+                      className="custom-radio"
+                      {...register("bathrooms", { required: true })}
+                    />
+                    <label className="custom-radio-label" htmlFor={`bathroom-${value}`}>{value}</label>
+                  </div>
+                ))}
+                </div>
+                {errors.bathrooms && (
+                  <span className="ml-2 text-sx tracking-wide text-pink-200">
+                    Please select the number of bathrooms
+                  </span>
+                )}
+              </div>
+
+              <div className="w-full flex flex-col gap-[10px] ">
+                <label className="text-darkblue text-sm font-walsheimMed font-[600]">
+                  Number of Car Spaces <sup className="text-pink-200">*</sup>
+                </label>
+                <div className="grid  sm:grid-cols-5 grid-cols-3 gap-2">
+                {["1", "2", "2+"].map((value) => (
+                  <div key={value} className="flex gap-2 flex-wrap">
+                    <input
+                      type="radio"
+                      id={`carSpace-${value}`}
+                      value={value}
+                      className="custom-radio"
+                      {...register("carSpaces", { required: true })}
+                    />
+                    <label className="custom-radio-label"  htmlFor={`carSpace-${value}`}>{value}</label>
+                  </div>
+                ))}
+                </div>
+                {errors.carSpaces && (
+                  <span className="ml-2 text-sx tracking-wide text-pink-200">
+                    Please select the number of car spaces
+                  </span>
+                )}
+              </div>
+            </div>
             <div className="flex w-11/12 py-3 flex-col space-y-2">
               <label
                 htmlFor="streetAddress"
@@ -176,68 +251,7 @@ const UserModal = ({ setUserModal }) => {
                 </span>
               )}
             </div>
-            <div className="flex w-11/12 py-3 flex-wrap  flex-row gap-[10px] justify-between items-center">
-              <div className="w-full sm:w-[25%]">
-                <label
-                  htmlFor="bedrooms"
-                  className="text-darkblue text-sm font-walsheimMed font-[600]"
-                >
-                  Bedrooms <sup className="text-pink-200">*</sup>
-                </label>
-                <input
-                  id="bedrooms"
-                  placeholder="Enter the number of bedrooms"
-                  type="number"
-                  {...register("bedrooms", { required: true })}
-                  className="form-style2 placeholder:text-sm w-full "
-                />
-                {errors.bedrooms && (
-                  <span className="ml-2 text-sx tracking-wide text-pink-200">
-                    Please enter the number of bedrooms
-                  </span>
-                )}
-              </div>
-              <div className=" w-full sm:w-[25%]">
-                <label
-                  htmlFor="bathrooms"
-                  className="text-darkblue text-sm font-walsheimMed font-[600]"
-                >
-                  Bathrooms <sup className="text-pink-200">*</sup>
-                </label>
-                <input
-                  id="bathrooms"
-                  type="number"
-                  placeholder="Enter the number of bathrooms"
-                  {...register("bathrooms", { required: true })}
-                  className="form-style2 placeholder:text-sm w-full "
-                />
-                {errors.bathrooms && (
-                  <span className="ml-2 text-sx tracking-wide text-pink-200">
-                    Please enter the number of bathrooms
-                  </span>
-                )}
-              </div>
-              <div className="w-full sm:w-[25%]">
-                <label
-                  htmlFor="carSpaces"
-                  className="text-darkblue text-sm font-walsheimMed font-[600]"
-                >
-                  Car Spaces <sup className="text-pink-200">*</sup>
-                </label>
-                <input
-                  id="carSpaces"
-                  type="number"
-                  placeholder="Enter the number of car spaces"
-                  {...register("carSpaces", { required: true })}
-                  className="form-style2 placeholder:text-sm w-full "
-                />
-                {errors.carSpaces && (
-                  <span className="ml-2 text-sx tracking-wide text-pink-200">
-                    Please enter the number of car spaces
-                  </span>
-                )}
-              </div>
-            </div>
+
             {/* last two buttons */}
             <div className="mt-6 w-11/12 flex justify-end gap-x-2">
               <button
