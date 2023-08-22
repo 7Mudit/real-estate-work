@@ -27,7 +27,7 @@ const HomePage = () => {
 
         <div className={`bg-primary ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
-            <Hero setUserModal = {setUserModal}/>
+            <Hero setUserModal={setUserModal} />
           </div>
         </div>
 
