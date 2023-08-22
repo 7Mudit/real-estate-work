@@ -7,13 +7,11 @@ const Hero = ({ setUserModal }) => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row  flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row  flex-col ${styles.paddingY} !py-5`}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-
-
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] md:text-[55px] lg:text-[65px]  text-[26px] text-white ss:leading-[100.8px]   ss:text-start sm:leading-[80px]">
             Sell your <br className="hidden ss:block" /> property in

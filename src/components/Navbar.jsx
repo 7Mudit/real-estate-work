@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import logos from './logo3.png'
+import logos from "./logomy2.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -10,7 +10,12 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logos} alt="hoobank" className="w-[254px] h-[82px]" />
+      {/* <img src={logos} alt="hoobank" className="w-[254px] h-[82px]" /> */}
+      <img
+        src={logos}
+        alt="hoobank"
+        className="w-[154px] scale-150 object-cover h-auto"
+      />
       {/* <h1 className="font-poppins text-white">My Real Estate Agent</h1> */}
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
