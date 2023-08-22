@@ -49,7 +49,7 @@ const FeatureCard = ({ icon, title, content, index, btnText }) => (
     </p>
     <div
       className="bg-dark
-   dark:bg-white dark:text-[#F57C00] text-white w-[80%] text-center py-2 rounded-b-lg"
+   dark:bg-white dark:text-[#F57C00] cursor-pointer text-white w-[80%] text-center py-2 rounded-b-lg"
     >
       <button className="font-semibold sm:text-sm md:text-md">{btnText}</button>
     </div>
