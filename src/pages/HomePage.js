@@ -36,10 +36,10 @@ const HomePage = () => {
             <Stats />
             <Business />
             <Billing />
-            <CardDeal />
+            {/* <CardDeal /> */}
             <Testimonials />
-            <Clients />
-            <CTA />
+            {/* <Clients /> */}
+            {/* <CTA /> */}
             <Footer />
           </div>
         </div>

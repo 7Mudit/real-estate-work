@@ -5,8 +5,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import people from '../assets/people.jpg'
-import comma from '../assets/comma.svg'
+import people from "../assets/people.jpg";
+import comma from "../assets/comma.svg";
 
 const peopleData = [
   {
@@ -67,7 +67,7 @@ const Billing = () => (
   >
     <h2 className={`${styles.heading2}  !w-auto`}>People we've helped</h2>
     <div className="w-full h-full mt-10">
-    <Swiper
+      <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={90}
         // onSlideChange={() => console.log("slide change")}
@@ -127,10 +127,8 @@ const Billing = () => (
             </div>
           </SwiperSlide>
         ))}
-    </Swiper>
+      </Swiper>
     </div>
-
-
   </section>
 );
 
