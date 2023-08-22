@@ -18,7 +18,7 @@ const HomePage = () => {
   const [userModal, setUserModal] = useState(false);
   return (
     <>
-      <div className="bg-primary w-full overflow-hidden">
+      <div className="bg-primary  w-full overflow-hidden">
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />

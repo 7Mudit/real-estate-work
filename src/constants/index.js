@@ -23,23 +23,26 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Sell My Property",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "A guide to selling your home",
+      btnText : "Get eBook"
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Lease My Home",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Are you thinking of selling your property in Canberra?",
+      btnText : "Request Market Appraisal"
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Buy A Property",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "A guide to marketing your home",
+      btnText : "Get eBook"
   },
 ];
 
