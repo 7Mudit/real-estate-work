@@ -13,9 +13,11 @@ import {
   Hero,
 } from "../components";
 import UserModal from "../components/UserModal";
+import UserModal2 from "../components/UserModal2";
 
 const HomePage = () => {
   const [userModal, setUserModal] = useState(false);
+  const [userModal2 , setUserModal2] = useState(false)
   return (
     <>
       <div className="bg-primary  w-full overflow-hidden">
@@ -34,7 +36,7 @@ const HomePage = () => {
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Stats />
-            <Business />
+            <Business setUserModal2 = {setUserModal2}/>
             <Billing />
             {/* <CardDeal /> */}
             <Testimonials />
@@ -45,6 +47,7 @@ const HomePage = () => {
         </div>
       </div>
       {userModal && <UserModal setUserModal={setUserModal} />}
+      {userModal2 && <UserModal2 setUserModal2={setUserModal2} />}
     </>
   );
 };
