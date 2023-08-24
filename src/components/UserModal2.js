@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import IconBtn from "./IconBtn";
 import { useLoadScript } from "@react-google-maps/api";
+import { getUserDetails } from "../services/ApiHandlers/Appraisal";
 
 const libraries = ["places"];
 
@@ -45,6 +46,7 @@ const UserModal = ({ setUserModal2 }) => {
   }, [register]);
   const onSubmit = async (data) => {
     console.log("Data for my form ", data);
+    await getUserDetails(data)
     setUserModal2(false);
   };
 

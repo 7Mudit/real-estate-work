@@ -1,8 +1,9 @@
-const baseUrl = 'http://localhost:3000/api/v1'
+const baseUrl = 'http://localhost:4000/api/v1'
 
 export const appraisalEndpoints  = {
     GET_ALL_APPRAISALS : baseUrl +  '/getAllAppraisals',
-    POST_A_APPRAISAL : baseUrl +  '/create-appraisal'
+    POST_A_APPRAISAL : baseUrl +  '/create-appraisal',
+    GET_USER_DETAILS : baseUrl + '/getContactDetails'
 }
 
 
