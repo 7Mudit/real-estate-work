@@ -7,13 +7,13 @@ module.exports = {
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
-        colorOrange : "#F57C00",
+        colorOrange: "#F57C00",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         white: "#fff",
-        lightblue: '#69c8d4',
-        darkblue: '#123c69',
-        teal: '#64d2a2',
+        lightblue: "#69c8d4",
+        darkblue: "#123c69",
+        teal: "#64d2a2",
         black: "#000",
         transparent: "#ffffff00",
         richblack: {
@@ -131,6 +131,10 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        walsheim: ["GT Walsheim Pro", "sans-serif"],
+        walsheimMed: ["GT Walsheim GT Walsheim Medium", "sans-serif"],
+        walsheimReg: ["GT Walsheim Regular", "sans-serif"],
+        walsheimCon: ["GT Walsheim Condensed", "sans-serif"],
       },
     },
     screens: {

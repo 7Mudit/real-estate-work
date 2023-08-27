@@ -1,8 +1,9 @@
 import { useState } from "react";
 
-import { close, logo, menu } from "../assets";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import logos from "./logomy2.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -20,15 +21,16 @@ const Navbar = () => {
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+          <NavLink
+            key={nav.link}
+            to={`${nav.link}`}
+            activeClassName="active"
+            className={`font-poppins font-normal cursor-pointer text-dimWhite ${
+              index === navLinks.length - 1 ? "mr-0" : "mr-10"
+            }`}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
+            {nav.title}
+          </NavLink>
         ))}
       </ul>
 
@@ -47,15 +49,16 @@ const Navbar = () => {
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+              <NavLink
+                key={nav.link}
+                to={`${nav.link}`}
+                activeClassName="active"
+                className={`font-poppins font-normal cursor-pointer text-dimWhite ${
+                  index === navLinks.length - 1 ? "mr-0" : "mr-10"
+                }`}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
+                {nav.title}
+              </NavLink>
             ))}
           </ul>
         </div>

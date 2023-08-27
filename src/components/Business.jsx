@@ -27,25 +27,33 @@ const FeatureCard = ({
     <p className="font-poppins text-center  sm:h-[50px] font-normal  text-dimWhite text-[16px] leading-[24px]">
       {content}
     </p>
-    {btnText === "Request Market Appraisal" ? (
+    {title === "Lease My Home" ? (
       <div
-        className="
-   text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
+        className="text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
         onClick={() => setUserModal2(true)}
       >
         <button className="font-semibold sm:text-sm md:text-md">
           {btnText}
         </button>
       </div>
-    ) : (
-      <div
-        className="
-   text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
+    ) : title === "Buy A Property" ? (
+      <a
+        className="text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
+        href="/Market.pdf" // Assume you have a function to handle eBook download
       >
         <button className="font-semibold sm:text-sm md:text-md">
           {btnText}
         </button>
-      </div>
+      </a>
+    ) : (
+      <a
+        className="text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
+        href="/Sell.pdf"
+      >
+        <button className="font-semibold sm:text-sm md:text-md">
+          {btnText}
+        </button>
+      </a>
     )}
   </div>
 );

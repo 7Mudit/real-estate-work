@@ -2,20 +2,16 @@ import { people01, people02, people03, facebook, instagram, linkedin, twitter, a
 
 export const navLinks = [
   {
-    id: "home",
+    link: "/",
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
+    link: "/about-us",
+    title: "About Us",
   },
   {
-    id: "product",
-    title: "Product",
-  },
-  {
-    id: "clients",
-    title: "Clients",
+    link: "/projects",
+    title: "Projects",
   },
 ];
 

@@ -160,3 +160,22 @@ a, button, [role="button"], input[type="submit"], input[type="button"] {
 .yellowButton {
   @apply cursor-pointer rounded-md bg-yellow-50 px-[20px] py-[8px] font-semibold text-richblack-900;
 }
+
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('../public/font/GTWalsheimPro-Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'GT Walsheim Medium';
+  src: url('../public/font/GTWalsheimPro-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'GT Walsheim Regular';
+  src: url('../public/font/GTWalsheimPro-RegularOblique.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'GT Walsheim Condensed';
+  src: url('../public/font/GTWalsheimPro-CondensedBold.woff2') format('woff2');
+}
+
