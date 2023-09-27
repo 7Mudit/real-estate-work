@@ -38,9 +38,10 @@ const HomePage = () => {
             <Stats />
             <Business setUserModal2={setUserModal2} />
             {/* this is reviews */}
-            <Billing />
+            {/* <Billing /> */}
             {/* <CardDeal /> */}
-            {/* <Testimonials /> */}
+            {/* this is review now */}
+            <Testimonials />
             {/* <Clients /> */}
             {/* <CTA /> */}
             <OurTeam/>

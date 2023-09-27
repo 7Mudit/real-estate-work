@@ -75,11 +75,11 @@ const Billing = () => (
   >
     <div className="flex flex-row w-full items-center justify-between">
       <h2 className={`${styles.heading2}  !w-auto`}>People we've helped</h2>
-      <div className=" btn-pink  transition-all duration-300 hover:scale-95 cursor-pointer ">
+      {/* <div className=" btn-pink  transition-all duration-300 hover:scale-95 cursor-pointer ">
         <button className="font-semibold sm:text-sm md:text-xl">
           Review us
         </button>
-      </div>
+      </div> */}
     </div>
 
     <div className="w-full h-full mt-10">

@@ -13,10 +13,10 @@ const AboutUs = () => {
           <div className={`${styles.boxWidth}`}>
             <Navbar />
 
-            <div className={`flex flex-col gap-[150px] py-[50px]`}>
+            <div className={`flex flex-col-reverse gap-[150px] py-[50px]`}>
               <div className="flex flex-col md:flex-row w-[90%] gap-[50px] mx-auto">
                 <div className="md:w-[40%] self-center object-cover">
-                  <img src={user1} className="rounded-[50%] " alt="" />
+                  <img src={user1} className=" rounded-[50%] " alt="" />
                 </div>
                 <div className="w-[100%] md:w-[50%] flex flex-col gap-[30px] text-justify text-white font-poppins">
                 <h1 className="text-[25px] md:text-[50px] tracking-wide font-walsheimCon">About Ankur</h1>

@@ -16,7 +16,7 @@ const OurTeam = () => {
         Our Team
       </h2>
 
-      <div className="flex md:gap-6 w-full gap-[150px] md:flex-row flex-col items-center mx-auto">
+      <div className="flex md:gap-6 w-full gap-[150px] md:flex-row-reverse flex-col-reverse items-center mx-auto">
       <div className="flex flex-col gap-5">
           <Link
             to="/about-us"
