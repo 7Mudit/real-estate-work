@@ -73,7 +73,15 @@ const Billing = () => (
     id="product"
     className={`flex flex-col justify-center items-center ${styles.paddingY}`}
   >
-    <h2 className={`${styles.heading2}  !w-auto`}>People we've helped</h2>
+    <div className="flex flex-row w-full items-center justify-between">
+      <h2 className={`${styles.heading2}  !w-auto`}>People we've helped</h2>
+      <div className=" btn-pink  transition-all duration-300 hover:scale-95 cursor-pointer ">
+        <button className="font-semibold sm:text-sm md:text-xl">
+          Review us
+        </button>
+      </div>
+    </div>
+
     <div className="w-full h-full mt-10">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
