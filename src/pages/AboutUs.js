@@ -20,7 +20,7 @@ const AboutUs = () => {
                 </div>
                 <div className="w-[100%] md:w-[50%] flex flex-col gap-[30px] text-justify text-white font-poppins">
                 <h1 className="text-[25px] md:text-[50px] font-walsheimCon">About Ankur</h1>
-                  <p className="font-walsheimReg text-[16px] leading-normal">
+                  <p className=" text-[16px] font-sans leading-normal">
                     Ankur Siwach is a reliable & results-driven real estate
                     professional with a passion for using technology & effective
                     communication to achieve success in the industry. With
@@ -30,7 +30,7 @@ const AboutUs = () => {
                     that allows him to provide top-notch service to his clients.
                   </p>
 
-                  <p className="font-walsheimReg text-[16px] leading-normal">
+                  <p className="font-sans text-[16px] leading-normal">
                     Ankur's negotiation skills have a proven track record of
                     helping clients secure their slice of the Australian dream,
                     whether they are first-time homebuyers or experienced
@@ -38,7 +38,7 @@ const AboutUs = () => {
                     unparalleled customer service & his ability to make the
                     process smooth & stress-free.
                   </p>
-                  <p className="font-walsheimReg text-[16px] leading-normal">
+                  <p className="font-sans text-[16px] leading-normal">
                     Outside of work, Ankur represented Eastlake Cricket Club in
                     ACT Premier Cricket Championship & received the prestigious
                     Phil Senior Most Valuable Player Award in 2021. He learned
@@ -49,7 +49,7 @@ const AboutUs = () => {
                     valued.
                   </p>
 
-                  <p className="font-walsheimReg text-[16px] leading-normal">
+                  <p className="font-sans text-[16px] leading-normal">
                     If you're planning on selling your property, Ankur Siwach
                     will guide you through every step of the process, from
                     comprehensive market analysis to effective marketing
@@ -69,7 +69,7 @@ const AboutUs = () => {
                     </span>
                   </h1>
 
-                  <p className="font-walsheimReg text-[16px] leading-normal text-justify ">
+                  <p className="font-sans text-[16px] leading-normal text-justify ">
                     Born in the country town of Goulburn, Matt Peden was raised
                     with strong family beliefs and the traditional Australian
                     principles that hard work and enthusiasm are the keys to a
@@ -78,7 +78,7 @@ const AboutUs = () => {
                     Ellie and Ashton.
                   </p>
 
-                  <p className="font-walsheimReg text-[16px] leading-normal text-justify ">
+                  <p className="font-sans text-[16px] leading-normal text-justify ">
                     Success in real estate comes from having passion; a
                     comprehensive understanding of the industry; an inherent
                     ability to comprehend clients' needs and impeccable
@@ -89,7 +89,7 @@ const AboutUs = () => {
                     Independent Property Group's most successful offices ever
                     since.
                   </p>
-                  <p className="font-walsheimReg text-[16px] leading-normal text-justify ">
+                  <p className="font-sans text-[16px] leading-normal text-justify ">
                     Matt's personal success comes from his dedication to
                     assisting people in making good decisions when buying and
                     selling established and new property in the region. The
@@ -100,7 +100,7 @@ const AboutUs = () => {
                     him by his loyal and extremely satisfied client base.
                   </p>
 
-                  <p className="font-walsheimReg text-[16px] leading-normal text-justify ">
+                  <p className="font-sans text-[16px] leading-normal text-justify ">
                     Buying and selling a property is an important and sometimes
                     demanding time. "Clients need to feel comfortable and have
                     confidence in their agent's ability to assist in every
@@ -110,7 +110,7 @@ const AboutUs = () => {
                     property with Independent Property Group, Matt's proven
                     results speak for themselves.
                   </p>
-                  <p className="font-walsheimReg text-[16px] leading-normal text-justify ">
+                  <p className="font-sans text-[16px] leading-normal text-justify ">
                     Matt's personal experience as a home owner, renovator and
                     investment property buyer also gives him the empathy truly
                     needed to achieve his clients' goals. His close association
@@ -118,7 +118,7 @@ const AboutUs = () => {
                     provides him with the ability to demonstrate a wider variety
                     of new properties to more homebuyers.
                   </p>
-                  <p className="font-walsheimReg text-[16px] leading-normal text-justify ">
+                  <p className="font-sans text-[16px] leading-normal text-justify ">
                     Such is Matt's ability and dedication that he now also
                     devotes a portion of his time to training and mentoring
                     other aspiring agents. Matt's role in training sees him pass
