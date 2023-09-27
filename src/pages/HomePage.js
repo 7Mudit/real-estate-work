@@ -36,9 +36,10 @@ const HomePage = () => {
           <div className={`${styles.boxWidth}`}>
             <Stats />
             <Business setUserModal2={setUserModal2} />
+            {/* this is reviews */}
             <Billing />
             {/* <CardDeal /> */}
-            <Testimonials />
+            {/* <Testimonials /> */}
             {/* <Clients /> */}
             {/* <CTA /> */}
             <Footer />

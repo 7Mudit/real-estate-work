@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import people from "../assets/people.jpg";
 import comma from "../assets/comma.svg";
+import RatingStars from "./RatingStars";
 
 const peopleData = [
   {
@@ -15,6 +16,7 @@ const peopleData = [
     img: people,
     name: "Courtney Henry",
     post: "Web Designer",
+    rating: 4.5,
   },
   {
     title: "Excellent Experience",
@@ -22,6 +24,7 @@ const peopleData = [
     img: people,
     name: "Alexandra Smith",
     post: "Digital Marketer",
+    rating: 5.0,
   },
   {
     title: "Impressive Platform",
@@ -29,6 +32,7 @@ const peopleData = [
     img: people,
     name: "John Davis",
     post: "Data Analyst",
+    rating: 3.5,
   },
   {
     title: "Game Changer",
@@ -36,6 +40,7 @@ const peopleData = [
     img: people,
     name: "Emily Johnson",
     post: "Software Engineer",
+    rating: 4.0,
   },
   {
     title: "Exceptional Learning Platform",
@@ -43,6 +48,7 @@ const peopleData = [
     img: people,
     name: "Michael Thompson",
     post: "Data Scientist",
+    rating: 4.2,
   },
   {
     title: "Game Changer",
@@ -50,6 +56,7 @@ const peopleData = [
     img: people,
     name: "Emily Johnson",
     post: "Software Engineer",
+    rating: 4.7,
   },
   {
     title: "Excellent Experience",
@@ -57,6 +64,7 @@ const peopleData = [
     img: people,
     name: "Alexandra Smith",
     post: "Digital Marketer",
+    rating: 4.1,
   },
 ];
 
@@ -75,7 +83,7 @@ const Billing = () => (
         loop={true}
         speed={500}
         autoplay
-        className="w-[100%] h-[100%] cursor-pointer"
+        className="w-full h-full cursor-pointer"
         // pagination={{ clickable: true }}
         // navigation
         breakpoints={{
@@ -99,22 +107,18 @@ const Billing = () => (
       >
         {peopleData.map((people, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col gap-4 px-[20px] py-[30px] rounded-[8px] bg-white">
+            <div className="flex flex-col transition-all duration-300 hover:scale-90 gap-4 px-[20px] py-[30px] rounded-[8px] bg-white">
               <div className="flex flex-row items-center justify-between">
                 <h3 className="text-[#6440fb] text-[18px] font-normal leading-[36px] text-[400]">
                   {people.title}
                 </h3>
                 <img src={comma} alt="" />
               </div>
-              <p className="text-[#140342] font-normal leading-[30px] font-walsheimReg">
+              <RatingStars Review_Count={people.rating} />
+              <p className="text-[#140342]  font-normal leading-[30px] font-walsheimReg">
                 {people.desc}
               </p>
               <div className="flex flex-row gap-4">
-                <img
-                  src={people.img}
-                  className="w-[64px] h-[64px] rounded-full"
-                  alt=""
-                />
                 <div className="flex flex-col gap-1 justify-center">
                   <p className="text-[#140342] text-[15px] leading-normal font-[400] font-walsheimCon">
                     {people.name}
