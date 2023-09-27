@@ -2,13 +2,14 @@ import styles from "../style";
 import { logo } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 import logos from "./logomy2.png";
+import newlogo from '../assets/newlogo2.png'
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+  <section className={`${styles.flexCenter} ${styles.paddingY} mt-[100px] flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img
-          src={logos}
+          src={newlogo}
           alt="hoobank"
           className="w-[154px] scale-150 object-cover h-auto"
         />

@@ -4,6 +4,7 @@ import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import logos from "./logomy2.png";
 import { NavLink } from "react-router-dom";
+import newlogo from '../assets/newlogo2.png'
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -13,9 +14,9 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar">
       {/* <img src={logos} alt="hoobank" className="w-[254px] h-[82px]" /> */}
       <img
-        src={logos}
+        src={newlogo}
         alt="hoobank"
-        className="w-[154px] scale-150 object-cover h-auto"
+        className="w-[184px]  object-cover h-auto"
       />
       {/* <h1 className="font-poppins text-white">My Real Estate Agent</h1> */}
 
