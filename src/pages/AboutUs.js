@@ -19,7 +19,7 @@ const AboutUs = () => {
                   <img src={user1} className="rounded-[50%] " alt="" />
                 </div>
                 <div className="w-[100%] md:w-[50%] flex flex-col gap-[30px] text-justify text-white font-poppins">
-                <h1 className="text-[25px] md:text-[50px] font-walsheimCon">About Ankur</h1>
+                <h1 className="text-[25px] md:text-[50px] tracking-wide font-walsheimCon">About Ankur</h1>
                   <p className=" text-[16px] font-sans leading-normal">
                     Ankur Siwach is a reliable & results-driven real estate
                     professional with a passion for using technology & effective
@@ -57,12 +57,12 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row-reverse w-[90%]  gap-[50px] mx-auto">
+              <div className="flex flex-col  md:flex-row-reverse w-[90%]  gap-[50px] mx-auto">
                 <div className="md:w-[40%] self-center object-cover">
                   <img src={user2} className="rounded-[50%] " alt="" />
                 </div>
                 <div className="w-[100%] md:w-[50%] flex flex-col gap-[30px] text-white font-poppins">
-                  <h1 className="text-[25px] md:text-[50px] font-walsheimCon">
+                  <h1 className="text-[25px] tracking-wide md:text-[50px] font-walsheimCon">
                     About Matt{" "}
                     <span className="text-[12px] md:text-sm font-walsheimMed">
                       29 years experience
