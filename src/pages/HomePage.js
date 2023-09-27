@@ -9,6 +9,7 @@ import {
   Testimonials,
   Hero,
 } from "../components";
+import OurTeam from "../components/OurTeam";
 import UserModal from "../components/UserModal";
 import UserModal2 from "../components/UserModal2";
 import Transition from "../components/Transition";
@@ -42,6 +43,7 @@ const HomePage = () => {
             {/* <Testimonials /> */}
             {/* <Clients /> */}
             {/* <CTA /> */}
+            <OurTeam/>
             <Footer />
           </div>
         </div>
