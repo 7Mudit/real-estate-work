@@ -17,7 +17,7 @@ const OurTeam = () => {
       </h2>
 
       <div className="flex md:gap-6 w-full gap-[150px] md:flex-row flex-col items-center mx-auto">
-        <div>
+      <div className="flex flex-col gap-5">
           <Link
             to="/about-us"
             className=" flex flex-col items-center gap-5  object-cover"
@@ -36,19 +36,19 @@ const OurTeam = () => {
               <FiFacebook
                 color="white"
                 size={25}
-                className="transition-all duration-300 hover:scale-110"
+                className="transition-all cursor-pointer duration-300 hover:scale-110"
               />
             </Link>
             <Link to="https://www.linkedin.com/in/imankursiwach-44/">
               <BiLogoLinkedin
                 color="white"
-                className="transition-all duration-300 hover:scale-110"
+                className="transition-all cursor-pointer duration-300 hover:scale-110"
                 size={30}
               />
             </Link>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col gap-5">
           <Link
             to="/about-us"
             className=" flex flex-col items-center gap-5  object-cover"
@@ -66,11 +66,11 @@ const OurTeam = () => {
             <FiFacebook
               color="white"
               size={25}
-              className="transition-all duration-300 hover:scale-110"
+              className="transition-all cursor-pointer duration-300 hover:scale-110"
             />
             <BiLogoLinkedin
               color="white"
-              className="transition-all duration-300 hover:scale-110"
+              className="transition-all cursor-pointer duration-300 hover:scale-110"
               size={30}
             />
           </div>
