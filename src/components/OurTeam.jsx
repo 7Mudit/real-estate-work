@@ -22,8 +22,8 @@ const OurTeam = () => {
             className="transition-all duration-300 hover:scale-90 rounded-[50%] w-[50%] h-[50%]"
             alt=""
           />
-          <h1 className="text-[25px] md:text-[50px] text-white font-walsheimCon">
-            Ankur
+          <h1 className="text-[25px] md:text-[50px] text-white font-serif tracking-wide">
+          Ankur Siwach
           </h1>
         </Link>
         <Link
@@ -35,8 +35,8 @@ const OurTeam = () => {
             className="transition-all duration-300 hover:scale-90 rounded-[50%] w-[50%] h-[50%]"
             alt=""
           />
-          <h1 className="text-[25px] md:text-[50px] text-white font-walsheimCon">
-            Matt
+          <h1 className="text-[25px] md:text-[50px] text-white font-serif tracking-wide">
+          Matt Peden
           </h1>
         </Link>
       </div>
