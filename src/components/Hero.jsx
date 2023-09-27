@@ -36,9 +36,11 @@ const Hero = ({ setUserModal }) => {
         <p
           className={`${styles.paragraph}  sm:text-justify max-w-[470px] mt-5`}
         >
-          Our trusted team of expert real estate agents provide personalized
-          marketing strategies & transparent communication to maximize the value
-          of your property.
+          Our <span className="font-extrabold">legacy</span> is built on
+          integrity, innovation and achieving outstanding results for our
+          clients. Whether you're buying, selling or investing, we're here to
+          guide you with expertise and clarity, ensuring a seamless and
+          rewarding property journey
         </p>
       </div>
 

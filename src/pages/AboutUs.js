@@ -9,17 +9,21 @@ const AboutUs = () => {
     <>
       <Transition />
       <div className="bg-primary  w-full overflow-hidden">
-        <div className={`${styles.paddingX}  ${styles.flexCenter}`}>
+        <div className={`${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
-            <Navbar />
+            <div className={`sm:px-16 px-6`}>
+              <Navbar />
+            </div>
 
             <div className={`flex flex-col-reverse gap-[150px] py-[50px]`}>
-              <div className="flex flex-col md:flex-row w-[90%] gap-[50px] mx-auto">
-                <div className="md:w-[40%] self-center object-cover">
+              <div className="flex flex-col  md:flex-row w-[100%] gap-[50px] mx-auto">
+                <div className="md:w-[40%]  object-cover">
                   <img src={user1} className=" rounded-[50%] " alt="" />
                 </div>
-                <div className="w-[100%] md:w-[50%] flex flex-col gap-[30px] text-justify text-white font-poppins">
-                <h1 className="text-[25px] md:text-[50px] tracking-wide font-walsheimCon">About Ankur</h1>
+                <div className="w-[100%] md:w-[80%] flex flex-col gap-[30px] text-justify text-white font-poppins">
+                  <h1 className="text-[25px] md:text-[50px] tracking-wide font-walsheimCon">
+                    About Ankur
+                  </h1>
                   <p className=" text-[16px] font-sans leading-normal">
                     Ankur Siwach is a reliable & results-driven real estate
                     professional with a passion for using technology & effective
