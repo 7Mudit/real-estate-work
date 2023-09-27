@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+
 function App() {
   const location = useLocation();
   function ScrollToTop() {

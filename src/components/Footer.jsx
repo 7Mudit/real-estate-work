@@ -11,7 +11,7 @@ const Footer = () => (
         <img
           src={newlogo}
           alt="hoobank"
-          className="w-[154px] scale-150 object-cover h-auto"
+          className="w-[184px]  object-cover h-auto"
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           A new way to make the payments easy, reliable and secure.

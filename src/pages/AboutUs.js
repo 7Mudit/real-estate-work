@@ -7,8 +7,11 @@ import Transition from "../components/Transition";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { CiMobile3 } from "react-icons/ci";
 import { AiOutlineMail } from "react-icons/ai";
+import UserModal from "../components/UserModal";
+import { useState } from "react";
 
 const AboutUs = () => {
+  const [userModal, setUserModal] = useState(false);
   return (
     <>
       <Transition />
@@ -27,8 +30,8 @@ const AboutUs = () => {
                     <h2 className="text-white font-bold text-[35px] ">
                       Matt Peden
                     </h2>
-                    <button className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink">
-                      Get an instant approval
+                    <button className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink" onClick={() => setUserModal(true)}>
+                      Get an instant Appraisal
                     </button>
                     {/* <div className="flex items-center justify-center mt-4 flex-row gap-2">
                       <BsTelephoneOutbound size={20} color="white" />
@@ -134,8 +137,8 @@ const AboutUs = () => {
                     <h2 className="text-white font-bold text-[35px] ">
                       Ankur Siwach
                     </h2>
-                    <button className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink">
-                      Get an instant approval
+                    <button className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink"             onClick={() => setUserModal(true)}>
+                      Get an instant Appraisal
                     </button>
                     {/* <div className="flex items-center justify-center mt-4 flex-row gap-2">
                       <BsTelephoneOutbound size={20} color="white" />
@@ -143,15 +146,15 @@ const AboutUs = () => {
                     </div> */}
                     <div className="flex items-center justify-center mt-4 flex-row gap-2">
                       <CiMobile3 size={20} color="white" />
-                      <p className="text-white">0419 000 079</p>
+                      <p className="text-white">0414 620 420</p>
                     </div>
                     <a
-                      href="mailto:matt.peden@independent.com.au"
+                      href="mailto:ankur.siwach@independent.com.au"
                       className="flex items-center justify-center mt-4 flex-row gap-2"
                     >
                       <AiOutlineMail size={20} color="white" />
                       <p className="text-white">
-                        matt.peden@independent.com.au
+                        ankur.siwach@independent.com.au
                       </p>
                     </a>
                   </div>
@@ -195,6 +198,10 @@ const AboutUs = () => {
                     comprehensive market analysis to effective marketing
                     strategies that ensure maximum exposure for your property.
                   </p>
+                  <h1 className="text-[30px] font-walsheim">Awards</h1>
+                  <ol className="list-inside list-disc">
+                    <li>Eastlake Cricket Club - Phil Senior Most Valuable Player Award in 2021</li>
+                  </ol>
                 </div>
               </div>
             </div>
@@ -206,6 +213,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      {userModal && <UserModal setUserModal={setUserModal} />}
     </>
   );
 };
