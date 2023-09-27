@@ -12,7 +12,7 @@ const FeatureCard = ({
   setUserModal2,
 }) => (
   <div
-    className={`flex flex-col gap-5 transition-all duration-300 hover:scale-110  sm:h-[350px]  items-center p-6 rounded-[20px]  ${
+    className={`flex flex-col gap-5 group transition-all duration-300 hover:scale-110  sm:h-[350px]  items-center p-6 rounded-[20px]  ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card`}
   >
@@ -29,16 +29,16 @@ const FeatureCard = ({
     </p>
     {title === "Lease My Home" ? (
       <div
-        className="text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
+        className="text-white group-hover:bg-white bg-discount-gradient transition-all duration-300  hover:text-colorOrange cursor-pointer hover:scale-110  w-[80%] text-center py-2 rounded-b-lg"
         onClick={() => setUserModal2(true)}
       >
-        <button className="font-semibold sm:text-sm md:text-md">
+        <button className="font-semibold  sm:text-sm md:text-md">
           {btnText}
         </button>
       </div>
     ) : title === "Buy A Property" ? (
       <a
-        className="text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
+        className="text-white group-hover:bg-white bg-discount-gradient transition-all duration-300  hover:text-colorOrange cursor-pointer hover:scale-110  w-[80%] text-center py-2 rounded-b-lg"
         href="/Market.pdf" // Assume you have a function to handle eBook download
       >
         <button className="font-semibold sm:text-sm md:text-md">
@@ -47,7 +47,7 @@ const FeatureCard = ({
       </a>
     ) : (
       <a
-        className="text-colorOrange cursor-pointer bg-white w-[80%] text-center py-2 rounded-b-lg"
+        className="text-white group-hover:bg-white bg-discount-gradient transition-all duration-300  hover:text-colorOrange cursor-pointer hover:scale-110  w-[80%] text-center py-2 rounded-b-lg"
         href="/Sell.pdf"
       >
         <button className="font-semibold sm:text-sm md:text-md">

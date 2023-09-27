@@ -63,16 +63,20 @@ const OurTeam = () => {
             </h1>
           </Link>
           <div className="flex flex-row gap-5 items-center justify-center">
-            <FiFacebook
+          <Link to='https://www.facebook.com/IndependentPropertyGroupBelconnen?mibextid=ZbWKwL'>
+          <FiFacebook
               color="white"
               size={25}
               className="transition-all cursor-pointer duration-300 hover:scale-110"
             />
+          </Link>
+          <Link to='https://www.linkedin.com/in/matthew-peden-88792a22'>
             <BiLogoLinkedin
               color="white"
               className="transition-all cursor-pointer duration-300 hover:scale-110"
               size={30}
             />
+            </Link>
           </div>
         </div>
       </div>
