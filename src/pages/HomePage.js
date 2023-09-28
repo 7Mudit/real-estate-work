@@ -13,10 +13,13 @@ import OurTeam from "../components/OurTeam";
 import UserModal from "../components/UserModal";
 import UserModal2 from "../components/UserModal2";
 import Transition from "../components/Transition";
+import CourseReviewModal from "../components/CourseReviewModal";
+
 
 const HomePage = () => {
   const [userModal, setUserModal] = useState(false);
   const [userModal2, setUserModal2] = useState(false);
+  const [reviewModal, setReviewModal] = useState(false);
   return (
     <>
       <Transition />
@@ -41,7 +44,7 @@ const HomePage = () => {
             {/* <Billing /> */}
             {/* <CardDeal /> */}
             {/* this is review now */}
-            <Testimonials />
+            <Testimonials setReviewModal={setReviewModal}/>
             {/* <Clients /> */}
             {/* <CTA /> */}
             <OurTeam/>
@@ -51,6 +54,7 @@ const HomePage = () => {
       </div>
       {userModal && <UserModal setUserModal={setUserModal} />}
       {userModal2 && <UserModal2 setUserModal2={setUserModal2} />}
+      {reviewModal && <CourseReviewModal setReviewModal={setReviewModal}/>}
     </>
   );
 };

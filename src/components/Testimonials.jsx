@@ -52,12 +52,12 @@ const peopleData = [
   },
 ];
 
-const Testimonials = () => (
+const Testimonials = ({setReviewModal}) => (
   <div className="w-full h-full mt-[100px]">
     <div className="flex gap-5 flex-col-reverse  sm:flex-row w-full items-center justify-between">
       <h2 className={`font-poppins font-semibold text-[28px] xs:text-[2.5em] sm:text-[3em] text-white xs:leading-[76.8px] leading-[66.8px]`}>People we helped</h2>
-      <div className=" btn-pink w-[60%] xs:w-[40%] sm:w-[20%] text-center  transition-all duration-300 hover:scale-95 cursor-pointer ">
-        <button className="font-semibold sm:text-sm md:text-xl">
+      <div className=" btn-pink w-[60%] xs:w-[40%] sm:w-[20%] text-center  transition-all duration-300 hover:scale-95 cursor-pointer " onClick={() => setReviewModal(true)}>
+        <button className="font-semibold sm:text-sm md:text-xl" >
           Review us
         </button>
       </div>
