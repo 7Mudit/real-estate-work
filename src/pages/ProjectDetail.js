@@ -218,7 +218,11 @@ const ProjectDetail = () => {
                       delay: 2000,
                       disableOnInteraction: true,
                     }}
-                    pagination={true}
+                    pagination={{
+                      clickable: true,
+                      bulletClass: "swiper-pagination-bullet", // Default class, but specifying just in case
+                      bulletActiveClass: "swiper-pagination-bullet-active", // Default class for active bullet
+                    }}
                     modules={[EffectFade, Pagination, Autoplay, Navigation]}
                     className="mySwiper"
                   >

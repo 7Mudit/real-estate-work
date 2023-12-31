@@ -14,3 +14,15 @@
 .swiper-button-prev {
     color: #fff;
 } */
+/* Custom pagination bullet color */
+.swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.6;
+    /* Optional: For inactive bullets */
+}
+
+/* Custom pagination active bullet color */
+.swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+}
