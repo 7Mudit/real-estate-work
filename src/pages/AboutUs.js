@@ -45,13 +45,11 @@ const AboutUs = () => {
                       <p className="text-white">0419 000 079</p>
                     </div>
                     <a
-                      href="mailto:matt.peden@independent.com.au"
+                      href="mailto:mpeden@blackshaw.com.au"
                       className="flex items-center justify-center mt-4 flex-row gap-2"
                     >
                       <AiOutlineMail size={20} color="white" />
-                      <p className="text-white">
-                        matt.peden@independent.com.au
-                      </p>
+                      <p className="text-white">mpeden@blackshaw.com.au</p>
                     </a>
                   </div>
                 </div>
@@ -147,13 +145,11 @@ const AboutUs = () => {
                       <p className="text-white">0414 620 420</p>
                     </div>
                     <a
-                      href="mailto:ankur.siwach@independent.com.au"
+                      href="mailto:asiwach@blackshaw.com.au"
                       className="flex items-center justify-center mt-4 flex-row gap-2"
                     >
                       <AiOutlineMail size={20} color="white" />
-                      <p className="text-white">
-                        ankur.siwach@independent.com.au
-                      </p>
+                      <p className="text-white">asiwach@blackshaw.com.au</p>
                     </a>
                   </div>
                 </div>

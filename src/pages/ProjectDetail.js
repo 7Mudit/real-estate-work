@@ -257,7 +257,9 @@ const ProjectDetail = () => {
                     </GoogleMap>
                   </LoadScript>
                 </div>
-
+                <h3 className="text-2xl font-walsheimCon decoration-emerald-500 underline underline-offset-[30px] text-white">
+                  Enquire Now
+                </h3>
                 {/* form */}
                 <form
                   onSubmit={handleSubmit(onSubmit)}
@@ -374,9 +376,7 @@ const ProjectDetail = () => {
                   </div>
                   <div className="flex flex-row gap-2 items-center justify-start">
                     <MdOutlineMailLock color="white" size={20} />
-                    <p className="text-dimWhite">
-                      ankur.siwach@independent.com.au
-                    </p>
+                    <p className="text-dimWhite">asiwach@blackshaw.com.au</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-5">
@@ -389,9 +389,7 @@ const ProjectDetail = () => {
                   </div>
                   <div className="flex flex-row gap-2 items-center justify-start">
                     <MdOutlineMailLock color="white" size={20} />
-                    <p className="text-dimWhite">
-                      matt.peden@independent.com.au
-                    </p>
+                    <p className="text-dimWhite">mpeden@blackshaw.com.au</p>
                   </div>
                 </div>
               </div>
