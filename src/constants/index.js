@@ -1,4 +1,19 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -10,8 +25,16 @@ export const navLinks = [
     title: "About Us",
   },
   {
+    link: "/for-sale",
+    title: "For Sale",
+  },
+  {
     link: "/projects",
     title: "Projects",
+  },
+  {
+    link: "/just-sold",
+    title: "Just Sold",
   },
 ];
 
@@ -20,25 +43,22 @@ export const features = [
     id: "feature-1",
     icon: star,
     title: "Sell My Property",
-    content:
-      "A guide to selling your home",
-      btnText : "Get eBook"
+    content: "A guide to selling your home",
+    btnText: "Get eBook",
   },
   {
     id: "feature-2",
     icon: shield,
     title: "Lease My Home",
-    content:
-      "Are you thinking of selling your property in Canberra?",
-      btnText : "Request Market Appraisal"
+    content: "Are you thinking of selling your property in Canberra?",
+    btnText: "Request Market Appraisal",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Buy A Property",
-    content:
-      "A guide to marketing your home",
-      btnText : "Get eBook"
+    content: "A guide to marketing your home",
+    btnText: "Get eBook",
   },
 ];
 

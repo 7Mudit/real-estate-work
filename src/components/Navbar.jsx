@@ -4,7 +4,7 @@ import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import logos from "./logomy2.png";
 import { NavLink } from "react-router-dom";
-import newlogo from '../assets/newlogo2.png'
+import newlogo from "../assets/newlogo2.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -46,7 +46,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-black-gradient absolute top-40 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (

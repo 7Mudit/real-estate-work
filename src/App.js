@@ -5,7 +5,7 @@ import AboutUs from "./pages/AboutUs";
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
+import Projects from "./pages/Projects";
 
 function App() {
   const location = useLocation();
@@ -29,6 +29,11 @@ function App() {
             path="/about-us"
             key={location.pathname}
             element={<AboutUs />}
+          ></Route>
+          <Route
+            path="/projects"
+            key={location.pathname}
+            element={<Projects />}
           ></Route>
         </Routes>
       </AnimatePresence>
