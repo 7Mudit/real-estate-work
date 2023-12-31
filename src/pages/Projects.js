@@ -11,6 +11,7 @@ import prop6 from "../assets/properties/prop6.jpeg";
 import prop7 from "../assets/properties/prop7.jpeg";
 import prop8 from "../assets/properties/prop8.jpeg";
 import prop9 from "../assets/properties/prop9.jpeg";
+import { Link } from "react-router-dom";
 
 const propertiesData = [
   {
@@ -130,9 +131,10 @@ const Projects = () => {
 
             <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-[50px]">
               {propertiesData.map((property, index) => (
-                <div
-                  key={index}
-                  className="flex shadow-lg duration-300 hover:scale-110 flex-col 
+                <Link
+                  to={`/projects/${property.id}`}
+                  key={property.id}
+                  className="flex hover:cursor-pointer shadow-lg duration-300 hover:scale-110 flex-col 
                    gap-[15px]"
                 >
                   <img
@@ -146,7 +148,7 @@ const Projects = () => {
                   <p className="font-light font-walsheimReg text-teal">
                     {property.location}
                   </p>
-                </div>
+                </Link>
               ))}
             </div>
 

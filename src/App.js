@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,11 @@ function App() {
             key={location.pathname}
             element={<Projects />}
           ></Route>
+          <Route
+            path="/projects/:id"
+            key={location.pathname}
+            element={<ProjectDetail />}
+          />
         </Routes>
       </AnimatePresence>
     </>

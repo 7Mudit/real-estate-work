@@ -143,7 +143,7 @@ const UserModal = ({ setUserModal2 }) => {
               <div className="flex py-3 w-11/12 justify-between gap-[10px] items-center flex-col ss:flex-row ">
                 <div className="w-full ss:w-[50%] ss:h-[100px]">
                   <label
-                    htmlFor="fullName"
+                    htmlFor="phoneNumber"
                     className="text-darkblue text-sm  font-walsheimMed font-[600]"
                   >
                     Your Phone Number <sup className="text-pink-200">*</sup>
