@@ -30,7 +30,10 @@ const AboutUs = () => {
                     <h2 className="text-white font-bold text-[35px] ">
                       Matt Peden
                     </h2>
-                    <button className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink" onClick={() => setUserModal(true)}>
+                    <button
+                      className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink"
+                      onClick={() => setUserModal(true)}
+                    >
                       Get an instant Appraisal
                     </button>
                     {/* <div className="flex items-center justify-center mt-4 flex-row gap-2">
@@ -63,61 +66,53 @@ const AboutUs = () => {
                   <p className="font-poppins text-[16px] font-bold leading-normal text-justify ">
                     Born in the country town of Goulburn, Matt Peden was raised
                     with strong family beliefs and the traditional Australian
-                    principles that hard work and enthusiasm are the keys to a
+                    principle that hard work and enthusiasm is the key to a
                     happy and successful life. These are principles Matt now
                     endeavours to pass on to his own children, Jake, Rowan, Ava,
-                    Ellie and Ashton.
-                  </p>
-
-                  <p className="font-poppins text-[16px] leading-normal text-justify ">
-                    Success in real estate comes from having passion; a
-                    comprehensive understanding of the industry; an inherent
-                    ability to comprehend clients' needs and impeccable
+                    Ellie & Ashton. Success in real estate comes from having
+                    passion, a comprehensive understanding of the industry, an
+                    inherent ability to comprehend clients’ needs & impeccable
                     organisational skills. It is the recognition of these
-                    qualities in Matt along with his strong management
-                    capabilities that led to his appointment as Principal of the
-                    Belconnen office in 2002. This has remained one of
-                    Independent Property Group's most successful offices ever
-                    since.
-                  </p>
-                  <p className="font-poppins text-[16px] leading-normal text-justify ">
-                    Matt's personal success comes from his dedication to
-                    assisting people in making good decisions when buying and
-                    selling established and new property in the region. The
-                    quality of Matt's service is proven time and time again as
-                    clients continue to trust and return to him when reselling
-                    their homes or when looking to add an investment property to
-                    their portfolio. Much of Matt's new business is referred to
-                    him by his loyal and extremely satisfied client base.
+                    qualities over a 29 year career so far, along with his
+                    strong management capabilities that has seen him
+                    consistently seen as one of the industry’s top agents.
                   </p>
 
                   <p className="font-poppins text-[16px] leading-normal text-justify ">
-                    Buying and selling a property is an important and sometimes
-                    demanding time. "Clients need to feel comfortable and have
-                    confidence in their agent's ability to assist in every
-                    aspect of the sale process," says Matt. With six years'
-                    experience in the finance industry followed by more than
-                    twenty highly successful years marketing and selling
-                    property with Independent Property Group, Matt's proven
-                    results speak for themselves.
+                    Matt’s personal success comes from his dedication to helping
+                    people make good decisions when buying and selling property
+                    in the ACT. The quality of Matt’s service is proven time and
+                    time again as clients continue to trust and return to him
+                    when reselling their homes or when looking to add an
+                    investment property to their portfolio. Much of Matt’s new
+                    business is referred to him by his loyal and extremely
+                    satisfied client base.
                   </p>
                   <p className="font-poppins text-[16px] leading-normal text-justify ">
-                    Matt's personal experience as a home owner, renovator and
-                    investment property buyer also gives him the empathy truly
-                    needed to achieve his clients' goals. His close association
-                    with many of Canberra's builders and property developers
-                    provides him with the ability to demonstrate a wider variety
-                    of new properties to more homebuyers.
+                    Much of Matt’s new business is referred to him by his loyal
+                    and extremely satisfied client base. Buying and selling a
+                    property is an important and sometimes demanding time. Matt
+                    knows that clients need to feel comfortable and have
+                    confidence in their agent’s ability to assist in every
+                    aspect of the sale process. With six years’ experience in
+                    the finance industry followed by nearly three decades of
+                    highly successful years marketing and selling property,
+                    Matt’s proven results speak for themselves.
                   </p>
+
                   <p className="font-poppins text-[16px] leading-normal text-justify ">
-                    Such is Matt's ability and dedication that he now also
-                    devotes a portion of his time to training and mentoring
-                    other aspiring agents. Matt's role in training sees him pass
-                    on invaluable knowledge in areas such as marketing, finance,
-                    time management and negotiation. Matt believes in ‘clients
-                    for life' and knows you need to treat people well to deserve
-                    that relationship. Talk to Matt about your real estate needs
-                    today.
+                    Matt’s personal experience as a home owner, renovator &
+                    investor also gives him the empathy truly needed to achieve
+                    his client’s goals. His close association with many of
+                    Canberra’s builders and property developers provides him
+                    with the ability to demonstrate a wider variety of new
+                    properties to more homebuyers. Such is Matt’s ability and
+                    dedication, that he now also devotes a portion of his time
+                    to training and mentoring aspiring agents. Matt’s role in
+                    training sees him pass on invaluable knowledge in areas such
+                    as marketing, finance, time management and negotiation. Matt
+                    believes in “clients for life” and knows you need to treat
+                    people well to deserve that relationship.
                   </p>
                   <h1 className="text-[30px] font-walsheim">Awards</h1>
                   <p>
@@ -137,7 +132,10 @@ const AboutUs = () => {
                     <h2 className="text-white font-bold text-[35px] ">
                       Ankur Siwach
                     </h2>
-                    <button className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink"             onClick={() => setUserModal(true)}>
+                    <button
+                      className="text-[#0086a1] hover:scale-90 transition-all duration-300  btn-pink"
+                      onClick={() => setUserModal(true)}
+                    >
                       Get an instant Appraisal
                     </button>
                     {/* <div className="flex items-center justify-center mt-4 flex-row gap-2">
@@ -163,16 +161,23 @@ const AboutUs = () => {
                   <h1 className="text-[25px] md:text-[50px] tracking-wide ">
                     About Ankur
                   </h1>
-                  <p className=" text-[16px] font-poppins text-justify leading-normal">
-                    Ankur Siwach is a reliable & results-driven real estate
-                    professional with a passion for using technology & effective
-                    communication to achieve success in the industry. With
-                    extensive experience in customer service & a Master's Degree
-                    in Engineering from the University of Western Sydney, Ankur
-                    has developed a keen eye for detail & an analytical mindset
-                    that allows him to provide top-notch service to his clients.
+                  <p className=" text-[16px] font-bold font-poppins text-justify leading-normal">
+                    Ankur Siwach brings a unique blend of technological
+                    expertise & a client-focused approach to the Canberra real
+                    estate market. With Ankur’s experience in off-the-plan
+                    projects & established homes sales, he offers a
+                    comprehensive understanding of the real estate landscape. He
+                    believes an agent's ability to promote the value of a
+                    property to a buyer & their ability to negotiate ultimately
+                    determines the price of the home.
                   </p>
 
+                  <p className="font-poppins text-justify text-[16px] leading-normal">
+                    With a Master's Degree in Engineering from the University of
+                    Western Sydney, Ankur has developed a keen eye for detail &
+                    an analytical mindset that allows him to provide top-notch
+                    service to his clients.
+                  </p>
                   <p className="font-poppins text-justify text-[16px] leading-normal">
                     Ankur's negotiation skills have a proven track record of
                     helping clients secure their slice of the Australian dream,
@@ -181,17 +186,16 @@ const AboutUs = () => {
                     unparalleled customer service & his ability to make the
                     process smooth & stress-free.
                   </p>
-                  <p className="font-poppins text-justify text-[16px] leading-normal">
-                    Outside of work, Ankur represented Eastlake Cricket Club in
-                    ACT Premier Cricket Championship & received the prestigious
-                    Phil Senior Most Valuable Player Award in 2021. He learned
-                    the values of collaboration, helpfulness, & respect while
-                    growing up in a large family in India. Ankur brings this
-                    same sense of teamwork & community to his work in real
-                    estate, ensuring that his clients always feel supported &
-                    valued.
-                  </p>
 
+                  <p className="font-poppins text-justify text-[16px] leading-normal">
+                    Outside of work, Ankur represented Eastlake Cricket Club &
+                    received the prestigious Phil Senior Most Valuable Player
+                    Award. He learned the values of collaboration, helpfulness &
+                    respect while growing up in a large family in India. Ankur
+                    brings this same sense of teamwork & family values to his
+                    work in real estate, ensuring that his clients always feel
+                    supported & valued.
+                  </p>
                   <p className="font-poppins text-justify text-[16px] leading-normal">
                     If you're planning on selling your property, Ankur Siwach
                     will guide you through every step of the process, from
@@ -200,7 +204,10 @@ const AboutUs = () => {
                   </p>
                   <h1 className="text-[30px] font-walsheim">Awards</h1>
                   <ol className="list-inside list-disc">
-                    <li>Eastlake Cricket Club - Phil Senior Most Valuable Player Award in 2021</li>
+                    <li>
+                      Eastlake Cricket Club - Phil Senior Most Valuable Player
+                      Award in 2021
+                    </li>
                   </ol>
                 </div>
               </div>

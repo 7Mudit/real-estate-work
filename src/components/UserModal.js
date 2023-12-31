@@ -46,12 +46,12 @@ const UserModal = ({ setUserModal }) => {
   }, [register]);
   const onSubmit = async (data) => {
     console.log("Data for my form ", data);
-    await creatingAppraisal(data)
+    await creatingAppraisal(data);
     setUserModal(false);
   };
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAbDLor5DBBfrNKD0FmiRR8PU1zeSPoD6E", // Replace with your Google Maps API Key
+    googleMapsApiKey: "AIzaSyA4UzERMDXnUJKpQW6YU-40RgQvDv-9raw", // Replace with your Google Maps API Key
     libraries,
   });
 
